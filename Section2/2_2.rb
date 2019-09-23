@@ -20,3 +20,5 @@ e = 1.to_s;puts e;d = nil.to_s;puts d;e = 10.to_s 16;puts e
 
 # 複数行コメントアウト
 # Ctrl + /
+
+# テスト
