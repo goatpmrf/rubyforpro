@@ -1,14 +1,15 @@
 module NameChanger
   def change_name
-    # include先のクラスのインスタンス変数を変更する
-    @name = 'ありす'
+    # セッターメソッド経由でデータを変更する
+    self.name = 'ありす'
   end
 end
 
 class User
   include NameChanger
 
-  attr_reader :name
+  # アクセサを用意
+  attr_accessor :name
 
   def initialize(name)
     @name = name
